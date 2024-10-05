@@ -40,7 +40,7 @@ const createAccountEmail = (fullName, email, password) => {
     </head>
     <body>
         <div class="container">
-            <h1>Welcome to Our Voting App Votely, ${fullName}!</h1>
+            <h1>Welcome to Our Voting App Verdictium, ${fullName}!</h1>
             <p>Thank you for registering with us! Your login credentials are as follows:</p>
             <div class="credentials">
                 <p><strong>Email:</strong> ${email}</p>
@@ -49,7 +49,7 @@ const createAccountEmail = (fullName, email, password) => {
             <p>We're excited to have you on board. If you have any questions or need assistance, please don't hesitate to contact us.</p>
             <div class="footer">
                 <p>Best regards,</p>
-                <p>Votely Team</p>
+                <p>Verdictium Team</p>
             </div>
         </div>
     </body>
@@ -130,14 +130,14 @@ const createVoterCredentialsEmail = (electionTitle, startTime, endTime, election
 
         <p>To cast your vote, please log in to the voting platform using your credentials and follow the instructions provided.</p>
 
-        <a href="http://localhost:3000/vote/login" class="button">Vote Now</a>
+        <a href="https://verdictium.vercel.app//voter/login" class="button">Vote Now</a>
 
         <p>Important: Please keep your login credentials secure and do not share them with anyone.</p>
 
         <p>Thank you for taking the time to participate in this important democratic process. Your vote can make a difference!</p>
 
         <div class="footer">
-            <p>Best Regards, Votely</p>
+            <p>Best Regards, Verdictium</p>
         </div>
     </div>
 </body>
@@ -219,7 +219,7 @@ const createElectionResultsEmail = (electionTitle, results, electionId) => {
             <p>Your participation is important, and we appreciate your involvement in the democratic process.</p>
             <div class="footer">
                 <p>Best Regards,</p>
-                <p>Votely Team</p>
+                <p>Verdictium Team</p>
             </div>
         </div>
     </body>
