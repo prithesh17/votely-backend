@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "node -r dotenv/config --experimental-json-modules src/index.js",
-    "build": "echo 'No build step required for Node.js backend'"
+    "build": "echo 'No build step required for Node.js backend'",
+    "start": "node src/index.js"
   },
   "keywords": [
     "backend"
