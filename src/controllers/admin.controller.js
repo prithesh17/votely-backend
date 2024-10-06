@@ -86,20 +86,15 @@ const loginAdmin = asyncHandler(async (req, res) => {
 const createElection = asyncHandler(async (req, res) => {
     const { electionTitle, startTime, endTime, candidates } = req.body;
     const adminId = req.user._id;
-
     if (!startTime || !endTime || !Array.isArray(candidates) || candidates.length === 0) {
         throw new ApiError(400, "Start time, end time, and candidates are required");
     }
 
-    const start = new Date(startTime);
-    const end = new Date(endTime);
-
-
     const newElection = await Election.create({
         adminId,
         electionTitle,
-        startTime: start,  
-        endTime: end,      
+        startTime,
+        endTime,
         candidates,
     });
 
@@ -109,7 +104,6 @@ const createElection = asyncHandler(async (req, res) => {
         message: "Election created successfully",
     });
 });
-
 
 const addVoters = asyncHandler(async (req, res) => {
     const { electionId, voters } = req.body;
