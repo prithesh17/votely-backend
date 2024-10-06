@@ -130,7 +130,7 @@ const createVoterCredentialsEmail = (electionTitle, startTime, endTime, election
 
         <p>To cast your vote, please log in to the voting platform using your credentials and follow the instructions provided.</p>
 
-        <a href="https://verdictium.vercel.app//voter/login" class="button">Vote Now</a>
+        <a href="https://verdictium.vercel.app/voter/login" class="button">Vote Now</a>
 
         <p>Important: Please keep your login credentials secure and do not share them with anyone.</p>
 
